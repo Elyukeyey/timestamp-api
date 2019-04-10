@@ -1,0 +1,123 @@
+/*
+*               VARIABLES
+*
+*
+*/
+
+:root {
+    --margins: 0.7em;
+    --paddings: 0.5em;
+    --color-p: #fff;
+    --color-s: #000;
+    --color-a: #f00;
+    --test-color: #000;
+    --grid-auto: repeat(minmax(auto-fill, 1fr));
+    --grid-custom: ;
+    --grid-gap: 1em;
+    --form-border: 1px #888 solid;
+    --form-display: inline-block;
+}
+/*
+*               DEFAULTS
+*/
+* {
+    margin: 0;
+    padding:0;
+}
+/*
+*               TEST ELEMENTS
+*/
+.test { 
+    border: 5px solid var(--test-color); 
+
+}
+/*
+*               MARGINS
+*/
+
+.margin-top { margin: var(--margins) 0 0 0; }
+.margin-bottom { margin:  0 0 var(--margins) 0; }
+.margin-left { margin:  0 0 0 var(--margins); }
+.margin-right{ margin:  0 var(--margins) 0 0; }
+.margin-tb { margin: var(--margins) 0; }
+.margin-lr { margin: 0 var(--margins); }
+
+/*
+*               PADDINGS
+*/
+
+.padding-top { padding: var(--paddings) 0 0 0; }
+.padding-bottom { padding:  0 0 var(--paddings) 0; }
+.padding-left { padding:  0 0 0 var(--paddings); }
+.padding-right{ padding:  0 var(--paddings) 0 0; }
+.padding-tb { padding: var(--paddings) 0; }
+.padding-lr { padding: 0 var(--paddings); }
+
+/*
+*               POSITION
+*/
+.pos-abs { position: absolute; }
+.pos-fix { position: fixed; }
+.pos-rel { position: relative; }
+
+.pos-center-x {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pos-center-y {
+    top: 50%;
+    transform: translateY(-50%)
+}
+.pos-center-xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pos-back {
+    z-index: -1;
+}
+.pos-middle {
+    z-index: 0;
+}
+.pos-front {
+    z-index: 1;
+}
+/*
+*               SHAPES
+*/
+.circle {
+    border-radius: 50%;
+}
+/*
+*               SIZING
+*/
+.screen-width-full { width: 100 vw; }
+.screen-height-full { height: 100vh ; }
+.screen-wh-full {
+    width: 100vw;
+    height: 100vh;
+}
+.screen-fixed {
+    width: 100%;
+    height: 100%;
+}
+.width-100 {
+    width: 100%;
+}
+.width-50 {
+    width: 50%;
+}
+/*
+*               GRID
+*/
+.grid {
+    grid-template-columns: var(--grid-auto);
+    grid-gap: var(--grid-gap);
+}
+/*
+*               FORMS
+*/
+input, textarea, button {
+    border: var(--form-border);
+    display: var(--form-display);
+}

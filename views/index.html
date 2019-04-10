@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Timestamp Microservice</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="common.css" rel="stylesheet" type="text/css">
+      <link href="core.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src='core.js'></script>
+   </head>
+
+   <body>
+
+      <div class="pos-abs pos-center-xy">
+        <h1 class=""><i class="far fa-clock"></i> Timestamp Microservice</h1>
+        
+        <div class="margin-tb">
+          <div class="width-100 text-center">
+          <h2>API:</h2>
+          </div> 
+          <p><code>GET [url]/api/timestamp/:date_string?</code></p>
+        </div>
+                    <h3 class="margin-tb text-center">Example:</h3>
+        <div class="margin-tb">
+            <p>Input:</p>
+            <code>GET [url]/api/timestamp/2015-12-25</code>
+            <code>GET [url]/api/timestamp/1450137600</code>
+            <p class='margin-tb'>Output:</p>
+              <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+        </div>
+      </div>
+      </body>
+</html>
